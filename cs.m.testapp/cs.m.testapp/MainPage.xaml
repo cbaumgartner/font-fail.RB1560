@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cs.m.testapp.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             Title="Safe Area"
+             ios:Page.UseSafeArea="true">
+
+    <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+        <Editor Grid.Row="1"
+                Placeholder="More text with g and y. Gggggggggggggg's and yyyyyyyyyyyyyyyyyyyyyyyyy's"/>
+        <Editor Grid.Row="2"
+                FontFamily="{StaticResource FontFamilyDefault}"
+                Placeholder="More text with g and y. Gggggggggggggg's and yyyyyyyyyyyyyyyyyyyyyyyyy's"/>
+
+        <Label Grid.Row="3"
+               MaxLines="3"
+               Text="This is a very long text with g's and y's for multiple lines. Lots of ggggggg's and lots of yyyyyyyyy's." />
+
+        <Label Grid.Row="4"
+               MaxLines="3"
+               FontFamily="{StaticResource FontFamilyDefault}"
+               Text="This is a very long text with g's and y's for multiple lines. Lots of ggggggg's and lots of yyyyyyyyy's." />
+    </Grid>
+
+</ContentPage>
